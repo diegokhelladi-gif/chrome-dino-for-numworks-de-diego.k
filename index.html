@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <title>Chrome Dino pour NumWorks de Diégo K.</title>
-  <meta name="description" content="Chrome Dino pour NumWorks : Le portage fidèle, fluide et optimisé du célèbre jeu Google, recréé pour calculatrice NumWorks par Diego Khelladi.">
-  <meta name="keywords" content="Chrome Dino for Numworks, chrome dino, numworks, jeu numworks, jeux numworks, Python, MicroPython, calculatrice, portage, dino game, diégo khelladi, diégo, khelladi">
+  <meta name="description"
+    content="Chrome Dino pour NumWorks : Le portage fidèle, fluide et optimisé du célèbre jeu Google, recréé pour calculatrice NumWorks par Diego Khelladi.">
+  <meta name="keywords"
+    content="Chrome Dino for Numworks, chrome dino, numworks, jeu numworks, jeux numworks, Python, MicroPython, calculatrice, portage, dino game, diégo khelladi, diégo, khelladi">
   <meta name="author" content="Diego Khelladi">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
@@ -16,14 +19,6 @@
     href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Orbitron:wght@400..900&family=Rubik+Mono+One&display=swap"
     rel="stylesheet">
   <style>
-    .titre {
-      color: rgb(199, 199, 199);
-    }
-
-    .font_white_color {
-      color: rgb(255, 255, 255);
-    }
-
     .yellow_bar {
       background-color: rgba(255, 183, 52, 1);
     }
@@ -51,6 +46,29 @@
       padding: 20px;
     }
 
+
+    button {
+      background-color: rgba(255, 255, 255, 0);
+      border-color: rgba(255, 255, 255, 0);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      font-family: "Orbitron", sans-serif;
+      font-weight: 400%;
+      font-style: normal;
+      margin: auto;
+    }
+
+    .orbitron_font {
+      text-decoration: none;
+      color: inherit;
+      font-family: "Orbitron", sans-serif;
+      font-size: 80%;
+      font-style: normal;
+    }
+
     .section_head_container {
       display: flex;
       justify-content: space-between;
@@ -74,28 +92,6 @@
       background-attachment: fixed;
       background-repeat: no-repeat;
       background-size: cover;
-    }
-
-    button {
-      background-color: rgba(255, 255, 255, 0);
-      border-color: rgba(255, 255, 255, 0);
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-      font-family: "Orbitron", sans-serif;
-      font-weight: 400%;
-      font-style: normal;
-      margin: auto;
-    }
-
-    .orbitron_font {
-      text-decoration: none;
-      color: inherit;
-      font-family: "Orbitron", sans-serif;
-      font-size: 80%;
-      font-style: normal;
     }
 
     .glass_section {
@@ -137,6 +133,33 @@
       justify-content: left;
       margin: auto;
       display: block;
+      flex-direction: column;
+    }
+
+    @media (max-width: 768px) {
+
+      .gradiant_section,
+      .download_section,
+      .section_head_container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .gradiant_section img,
+      .download_section img {
+        margin-top: 20px;
+      }
+
+      .download_section img {
+        max-width: 120px;
+        height: auto;
+      }
     }
   </style>
 </head>
@@ -178,7 +201,7 @@
       <section>
         <img
           src="https://tiplanet.org/modules/archives/captures/1774799274chrome_dino_for_numworks_screenshot_diego_k.gif"
-          alt="gif_gameplay_cd" height="auto">
+          alt="gif_gameplay_cd">
       </section>
     </section>
     <br>
